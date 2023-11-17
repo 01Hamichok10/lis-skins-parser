@@ -1,11 +1,6 @@
 import json
 import requests
 from bs4 import BeautifulSoup as BS
-import undetected_chromedriver as uc
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 print("Загружаем информацию из JSON...\n")
 with open('items_for_search.json', 'r') as file:
@@ -35,30 +30,8 @@ for item in items_data:
 
     print("Начальная цена Steam:", price_steam)
 
-    options = uc.ChromeOptions()
-    driver = uc.Chrome(options=options)
-
     if (float(price_steam)/float(min_price_lis) >= 2):
-        print("Разница: ", float(price_steam)/float(min_price_lis), " Профит епта")
-
-        driver.get(item["URL"])
-        try:
-            # Ждем, чтобы убедиться, что страница загружена
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, "min-price-buttons"))
-            )
-
-            # Находим кнопку "Купить сейчас" по тексту
-            buy_now_button = driver.find_element(By.XPATH,"//div[@class='buy-now buy-now-button' and contains(text(), 'Купить сейчас')]")
-
-            # Нажимаем на кнопку
-            buy_now_button.click()
-
-            # СЮДА НАХУЙ КНОПКУ ПОДТВЕРЖДЕНИЯ
-
-        finally:
-            # Закрываем браузер после выполнения действий
-            driver.quit()
+        print("Разница: ", float(price_steam)/float(min_price_lis), " Профит епта\n")
 
     else:
-        print("Разница: ", float(price_steam)/float(min_price_lis), " Нихуя не профит ебать")
+        print("Разница: ", float(price_steam)/float(min_price_lis), " Нихуя не профит ебать\n")
