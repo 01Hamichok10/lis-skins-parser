@@ -7,7 +7,7 @@ with open('items_for_search.json', 'r') as file:
     items_data = json.load(file)
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0',
 }
 
 for item in items_data:
@@ -16,6 +16,7 @@ for item in items_data:
 
     souplis = BS(response_lis.text, 'html.parser')
     print(souplis.find('h1').get_text(strip=True))
+
 
     min_price_lis = souplis.find('div', class_='min-price-value').find(string=True).strip()
     print("Min Price:", min_price_lis)
@@ -30,8 +31,8 @@ for item in items_data:
 
     print("Начальная цена Steam:", price_steam)
 
-    if (float(price_steam)/float(min_price_lis) >= 2):
-        print("Разница: ", float(price_steam)/float(min_price_lis), " Профит епта\n")
+    if (float(min_price_lis) < ((float(price_steam)/2)*0.85)):
+        print(float(min_price_lis), ' < ', ((float(price_steam)/2)*0.85), " Профит епта\n")
 
     else:
-        print("Разница: ", float(price_steam)/float(min_price_lis), " Нихуя не профит ебать\n")
+        print(float(min_price_lis), ' < ', ((float(price_steam)/2)*0.85),  " Нихуя не профит ебать\n")
