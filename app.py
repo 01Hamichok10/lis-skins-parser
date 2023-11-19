@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 
+
 print("Загружаем информацию из JSON...\n")
 with open('items_for_search.json', 'r') as file:
     items_data = json.load(file)
@@ -47,7 +48,7 @@ while buy == False:
                              "//div[@class='buy-now buy-now-button' and contains(text(), 'Купить сейчас')]").click()
             try:
                 WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "buy-now-popup-button")))
-                browser.find_element(By.XPATH,"//div[@class='buy-now-popup-button buy-now-popup-bottom-button' and contains(., 'Оплатить')]").click()
+                # browser.find_element(By.XPATH,"//div[@class='buy-now-popup-button buy-now-popup-bottom-button' and contains(., 'Оплатить')]").click()
 
             finally:
                 print("Куплено (наверное)")
