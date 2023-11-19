@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c8390d6-dac8-4211-98d9-f6df602a87ac" name="Changes" comment="жопа бобра">
+    <list default="true" id="1c8390d6-dac8-4211-98d9-f6df602a87ac" name="Changes" comment="Версия с 2 программами">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/items_for_search.json" beforeDir="false" afterPath="$PROJECT_DIR$/items_for_search.json" afterDir="false" />
@@ -96,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700316603628</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Версия с 2 программами">
+      <option name="closed" value="true" />
+      <created>1700406345817</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700406345817</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="суецыдный кот" />
     <MESSAGE value="жопа бобра" />
-    <option name="LAST_COMMIT_MESSAGE" value="жопа бобра" />
+    <MESSAGE value="Версия с 2 программами" />
+    <option name="LAST_COMMIT_MESSAGE" value="Версия с 2 программами" />
   </component>
 </project>
