@@ -1,12 +1,14 @@
 [
   {
     "URL": "https://lis-skins.ru/market/csgo/stattrak-desert-eagle-blue-ply-field-tested/",
-    "SteamURL": "https://steamcommunity.com/market/listings/730/StatTrak\u0432\u201e\u045e%20Desert%20Eagle%20%7C%20Blue%20Ply%20%28Field-Tested%29",
-    "price_steam": 65.92
+    "SteamURL": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Desert%20Eagle%20%7C%20Blue%20Ply%20%28Field-Tested%29",
+    "item_id": "176118321",
+    "price_steam": 0.62
   },
   {
     "URL": "https://lis-skins.ru/market/csgo/glock-18-bunsen-burner-battle-scarred/",
     "SteamURL": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Bunsen%20Burner%20%28Battle-Scarred%29",
-    "price_steam": 27.11
+    "item_id": "49359035",
+    "price_steam": 0.25
   }
 ]
